@@ -1,8 +1,8 @@
-* ,html{
+*{
   margin: 0;
   padding: 0;
 }
-body{
+html{
     background-color: black;
 }
 /* header */
@@ -73,11 +73,9 @@ header {
 .card .card-text {
   text-align: justify;
 }
-body{
-    background-color: aqua;
-}
+
 main{
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
 }
 /* skill */
 .skillContainer .card {
