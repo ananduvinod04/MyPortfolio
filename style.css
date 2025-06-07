@@ -58,3 +58,13 @@ main{
     color: white;
     padding: 0 20px;
   }
+
+ .card .card-header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+
+  }
+  .card .card-text{
+    text-align: justify;
+  }
