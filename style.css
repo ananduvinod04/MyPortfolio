@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+    background-color: black;
+}
 /* header */
 header {
   position: fixed;
@@ -22,9 +25,7 @@ header {
   margin-left: auto;
 }
 /* main */
-main {
-  background-color: black;
-}
+
 /* banner */
 .banner {
   margin-top: 50px;
@@ -97,3 +98,14 @@ main {
     border: none;
    
 }
+
+.projectItem .card{
+   color: white;
+}
+/* contacts */
+
+.contact .card{
+    color: white;
+}
+
+
