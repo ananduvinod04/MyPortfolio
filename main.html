@@ -124,11 +124,11 @@
         <div class="row g-2">
           <section class="skillContainer">
             <div class="card">
-              <div class="card-header">Skills</div>
+              <div class="card-header"><h2>Skills</h2></div>
               <div class="card-body row">
-                <div class="techskill">
+                <div class="techskill col-md-6">
                   <div class="card">
-                    <div class="card-header">Technical Skills</div>
+                    <div class="card-header"><h3>Technical Skills</h3></div>
                     <ul class="list-group list-group-flush skillitem">
                       <li class="list-group-item">
                         HTML – Basic understanding of structuring web pages
@@ -148,9 +148,9 @@
                     </ul>
                   </div>
                 </div>
-                <div class="otherskill">
+                <div class="otherskill col-md-6">
                   <div class="card">
-                    <div class="card-header">Other skills</div>
+                    <div class="card-header"><h3>Other skills</h3></div>
                     <ul class="list-group list-group-flush skillitem">
                       <li class="list-group-item">
                         Accounting and Cash Management
@@ -161,6 +161,7 @@
                       <li class="list-group-item">
                         Basic Computer Knowledge (MS Office, Tally)
                       </li>
+                      <li class="list-group-item">.</li>
                     </ul>
                   </div>
                 </div>
@@ -175,50 +176,60 @@
         <div class="row g-2">
           <section class="projectSection">
             <div class="card bg-dark">
-              <div class="card-header">Projects</div>
+              <div class="card-header"><h2>Projects</h2></div>
               <div class="card-body projectItem">
                 <!--project card 1 -->
-                <div class="card">
-                  <img
-                    src="cashHandlingToolProjectImg.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body bg-black">
-                    <h3 class="card-title">Cash Handling Tool</h3>
+                <div class="row projectContainer">
+                  <div
+                    class="card col-md-6 p-0 border-0"
+                    style="max-width: 400px"
+                  >
+                    <img
+                      src="cashHandlingToolProjectImg.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body bg-black">
+                      <h3 class="card-title">Cash Handling Tool</h3>
 
-                    <p class="card-text">
-                      This is a basic tool designed to help quickly calculate
-                      cash denominations and totals. It can be useful for
-                      cashiers or accountants to manage daily cash routines more
-                      efficiently.
-                    </p>
-                    <a href="#" class="btn btn-primary"> view in gitHub</a>
+                      <p class="card-text">
+                        This is a basic tool designed to help quickly calculate
+                        cash denominations and totals. It can be useful for
+                        cashiers or accountants to manage daily cash routines
+                        more efficiently.
+                      </p>
+                      <a href="#" class="btn btn-primary projectCardBtn">
+                        view in gitHub</a
+                      >
+                    </div>
+                  </div>
+
+                  <!-- project card 2 -->
+                  <div
+                    class="card col-md-6 p-0 border-0"
+                    style="max-width: 400px"
+                  >
+                    <img
+                      src="hotelWebsiteProject.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body bg-black">
+                      <h3 class="card-title">Hotel Amruthu Website</h3>
+
+                      <p class="card-text">
+                        This website provides a clean and user-friendly
+                        interface to showcase the essential features of Hotel
+                        Amruthu. It serves as an online presence for the hotel,
+                        offering information about rooms, services, and contact
+                        options for visitors and potential guests.
+                      </p>
+                      <a href="#" class="btn btn-primary projectCardBtn">
+                        view in gitHub</a
+                      >
+                    </div>
                   </div>
                 </div>
-
-                <!-- project card 2 -->
-                <div class="card">
-                  <img
-                    src="hotelWebsiteProject.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body bg-black">
-                    <h3 class="card-title">Hotel Amruthu Website</h3>
-
-                    <p class="card-text">
-                      This website provides a clean and user-friendly interface
-                      to showcase the essential features of Hotel Amruthu. It
-                      serves as an online presence for the hotel, offering
-                      information about rooms, services, and contact options for
-                      visitors and potential guests.
-                    </p>
-                    <a href="#" class="btn btn-primary"> view in gitHub</a>
-                  </div>
-                </div>
-
-                <!-- project card 3 -->
               </div>
             </div>
           </section>
@@ -229,7 +240,7 @@
         <div class="row">
           <section class="Career">
             <div class="card bg-dark">
-              <h5 class="card-header">Career Milestones</h5>
+              <h2 class="card-header ">Career Milestones</h2>
               <div class="card-body">
                 <div
                   class="accordion accordion-flush"
@@ -238,14 +249,14 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed bg-dark text-white"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
                         aria-expanded="false"
                         aria-controls="flush-collapseOne"
                       >
-                        (2023-Present) Accountant-Hotel Amruthu
+                        <h4>(2023-Present) Accountant-Hotel Amruthu</h4>
                       </button>
                     </h2>
                     <div
@@ -255,25 +266,25 @@
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                       <ul class="accordinBodyContent">
-                        <li>Handling daily cash routines</li>
-                        <li>Mananging stock records</li>
-                        <li>Supporting internal audits</li>
-                       </ul>
+                        <ul class="accordinBodyContent">
+                          <li>Handling daily cash routines</li>
+                          <li>Mananging stock records</li>
+                          <li>Supporting internal audits</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                       <button
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed bg-dark text-white"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo"
                         aria-expanded="false"
                         aria-controls="flush-collapseTwo"
                       >
-                        Accordion Item #2
+                        <h4>(Feb 2021- Nov 2021) Accountant -KBC Green Park</h4>
                       </button>
                     </h2>
                     <div
@@ -283,25 +294,26 @@
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        Placeholder content for this accordion, which is
-                        intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second
-                        item's accordion body. Let's imagine this being filled
-                        with some actual content.
+                        <ul class="accordinBodyContent">
+                          <li>Monitored inventory and procurement</li>
+                          <li>Managed store accounts</li>
+                          <li>Generated daily financial reports</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button
-                        class="accordion-button collapsed"
+                        class="accordion-button collapsed bg-dark text-white"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree"
                         aria-expanded="false"
                         aria-controls="flush-collapseThree"
                       >
-                        Accordion Item #3
+                        <h4>(Oct 2019-Apr 2020) Junior medical coder-visionary rcm
+                        coimbatore </h4>
                       </button>
                     </h2>
                     <div
@@ -311,20 +323,52 @@
                       data-bs-parent="#accordionFlushExample"
                     >
                       <div class="accordion-body">
-                        Placeholder content for this accordion, which is
-                        intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the third
-                        item's accordion body. Nothing more exciting happening
-                        here in terms of content, but just filling up the space
-                        to make it look, at least at first glance, a bit more
-                        representative of how this would look in a real-world
-                        application.
+                        <ul class="accordinBodyContent">
+                          <li>
+                            Reviewed patient records and assigned standard codes
+                          </li>
+                          <li>Ensured accuracy for insurance billing</li>
+                          <li>
+                            Trained in ICD-10 & CPT coding systems 2016 – 2019
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed bg-dark text-white"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                       <h4>(2016-2019) Bachelors degree in Biotechnology</h4> 
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ul class="accordinBodyContent">
+                          <li>Graduated with 75.65%</li>
+                          <li>Participated in science exhibitions</li>
+                          <li>
+                            Developed interest in data management
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary">Download Ressume</a>
+                <a href="#" class="btn btn-primary" style="margin-top: 30px;">Download Ressume</a>
               </div>
             </div>
           </section>
@@ -335,7 +379,7 @@
         <div class="row g-2">
           <section class="contact">
             <div class="card bg-dark">
-              <div class="card-header">Contacts</div>
+              <div class="card-header"><h2>Contacts</h2></div>
               <div class="card-body">
                 <form action="">
                   <div class="mb-3">

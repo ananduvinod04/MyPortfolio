@@ -63,6 +63,7 @@ header {
 }
 .row {
   justify-content: center;
+ 
 }
 
 .card .card-header {
@@ -102,9 +103,19 @@ main{
    
 }
 
+.projectContainer{
+  display: flex;
+  justify-content: space-around;
+}
 .projectItem .card{
    color: white;
 }
+
+.accordion-body{
+  background-color: rgb(104, 104, 104);
+  color: white;
+}
+
 /* contacts */
 
 .contact .card{
