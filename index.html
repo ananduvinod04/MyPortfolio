@@ -42,18 +42,31 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="closeNavbar()">About</a>
+                <a class="nav-link" href="#about" onclick="closeNavbar()"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="closeNavbar()">Skills</a>
+                <a class="nav-link" href="#skills" onclick="closeNavbar()"
+                  >Skills</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="closeNavbar()"
+                <a class="nav-link" href="#projects" onclick="closeNavbar()"
                   >Projects</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="closeNavbar()"
+                <a
+                  class="nav-link"
+                  href="#career
+                "
+                  onclick="closeNavbar()"
+                  >Career</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts" onclick="closeNavbar()"
                   >Contacts</a
                 >
               </li>
@@ -81,10 +94,24 @@
             "Turning my passion for technology into a career one line of code at
             a time."
           </p>
+
           <div class="btnContainer">
-            <button class="btn btn-primary" style="width: 180px" onclick="downloadPDF() ">
-              Download Ressume
-            </button>
+            <a
+              href="assets/downloads/AnanduVinod.pdf"
+              class="btn btn-primary"
+              style="margin-top: 30px"
+              download
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
+                /></svg>Download Resume</a
+            >
           </div>
         </div>
       </section>
@@ -129,7 +156,7 @@
         <div class="row g-2">
           <section class="skillContainer">
             <div class="card">
-              <div class="card-header"><h2>Skills</h2></div>
+              <div class="card-header" id="skills"><h2>Skills</h2></div>
               <div class="card-body row">
                 <div class="techskill col-md-6">
                   <div class="card">
@@ -181,7 +208,7 @@
         <div class="row g-2">
           <section class="projectSection">
             <div class="card bg-dark">
-              <div class="card-header"><h2>Projects</h2></div>
+              <div class="card-header" id="projects"><h2>Projects</h2></div>
               <div class="card-body projectItem">
                 <!--project card 1 -->
                 <div class="row projectContainer">
@@ -203,7 +230,10 @@
                         cashiers or accountants to manage daily cash routines
                         more efficiently.
                       </p>
-                      <a href="https://github.com/ananduvinod04/denomination-calculator.git" class="btn btn-primary projectCardBtn">
+                      <a
+                        href="https://github.com/ananduvinod04/denomination-calculator.git"
+                        class="btn btn-primary projectCardBtn"
+                      >
                         view in gitHub</a
                       >
                     </div>
@@ -244,7 +274,7 @@
         <!-----------------cv or resume section------------------ -->
         <div class="row">
           <section class="Career">
-            <div class="card bg-dark">
+            <div class="card bg-dark" id="career">
               <h2 class="card-header">Career Milestones</h2>
               <div class="card-body">
                 <div
@@ -373,8 +403,12 @@
                   </div>
                 </div>
 
-                <a href="assets/downloads/AnanduVinod.pdf" class="btn btn-primary" style="margin-top: 30px"
-                  download>Download Ressume</a
+                <a
+                  href="assets/downloads/AnanduVinod.pdf"
+                  class="btn btn-primary"
+                  style="margin-top: 30px"
+                  download
+                  ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Download Resume</a
                 >
               </div>
             </div>
@@ -384,7 +418,7 @@
         <!-- end of cv section -->
         <!-- contact section -->
         <div class="row g-2">
-          <section class="contact">
+          <section class="contact" id="contacts">
             <div class="card bg-dark">
               <div class="card-header"><h2>Contacts</h2></div>
               <div class="card-body">
@@ -473,9 +507,7 @@
       </div>
 
       <!-- Copyright -->
-      <div class="text-center p-3 bg-secondary">
-        &copy; 2025 Anandu Vinod.
-      </div>
+      <div class="text-center p-3 bg-secondary">&copy; 2025 Anandu Vinod.</div>
     </footer>
 
     <!-- scripts -->
@@ -487,20 +519,19 @@
     <script>
       function closeNavbar() {
         const navbarCollapse = document.getElementById("navbarNav");
-       
+
         if (navbarCollapse.classList.contains("show")) {
           navbarCollapse.classList.remove("show");
         }
       }
       function downloadPDF() {
-     
-      const link = document.createElement('a');
-      link.href = './assets/downloads/AnanduVinod.pdf';
-     
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
+        const link = document.createElement("a");
+        link.href = "./assets/downloads/AnanduVinod.pdf";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
     </script>
   </body>
 </html>
