@@ -81,6 +81,11 @@
             "Turning my passion for technology into a career one line of code at
             a time."
           </p>
+          <div class="btnContainer">
+            <button class="btn btn-primary" style="width: 180px" onclick="downloadPDF() ">
+              Download Ressume
+            </button>
+          </div>
         </div>
       </section>
 
@@ -185,7 +190,7 @@
                     style="max-width: 600px"
                   >
                     <img
-                      src="cashHandlingToolProjectImg.jpg"
+                      src="images/ProjectImages/cashHandlingToolProjectImg.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -198,7 +203,7 @@
                         cashiers or accountants to manage daily cash routines
                         more efficiently.
                       </p>
-                      <a href="#" class="btn btn-primary projectCardBtn">
+                      <a href="https://github.com/ananduvinod04/denomination-calculator.git" class="btn btn-primary projectCardBtn">
                         view in gitHub</a
                       >
                     </div>
@@ -210,7 +215,7 @@
                     style="max-width: 600px"
                   >
                     <img
-                      src="hotelWebsiteProject.jpg"
+                      src="images/ProjectImages/hotelWebsiteProject.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -368,8 +373,8 @@
                   </div>
                 </div>
 
-                <a href="#" class="btn btn-primary" style="margin-top: 30px"
-                  >Download Ressume</a
+                <a href="assets/downloads/AnanduVinod.pdf" class="btn btn-primary" style="margin-top: 30px"
+                  download>Download Ressume</a
                 >
               </div>
             </div>
@@ -450,14 +455,14 @@
               >Email</a
             >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/ananduvinod04"
               target="_blank"
               class="btn btn-outline-light btn-sm m-1"
               role="button"
               >GitHub</a
             >
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/anandu-vinod-6b8461354"
               target="_blank"
               class="btn btn-outline-light btn-sm m-1"
               role="button"
@@ -469,7 +474,7 @@
 
       <!-- Copyright -->
       <div class="text-center p-3 bg-secondary">
-        &copy; 2025 Anandu Vinod. Made with ❤
+        &copy; 2025 Anandu Vinod.
       </div>
     </footer>
 
@@ -482,11 +487,20 @@
     <script>
       function closeNavbar() {
         const navbarCollapse = document.getElementById("navbarNav");
-        // Check if navbar is expanded and collapse it
+       
         if (navbarCollapse.classList.contains("show")) {
           navbarCollapse.classList.remove("show");
         }
       }
+      function downloadPDF() {
+     
+      const link = document.createElement('a');
+      link.href = './assets/downloads/AnanduVinod.pdf';
+     
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
     </script>
   </body>
 </html>
